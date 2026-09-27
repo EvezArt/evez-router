@@ -1,0 +1,31 @@
+{
+  "timestamp": 1789268058.8158746,
+  "results": [
+    {
+      "name": "local_gateway",
+      "up": true,
+      "latency_ms": 3.8
+    },
+    {
+      "name": "ollama_local",
+      "up": true,
+      "latency_ms": 5.1
+    },
+    {
+      "name": "local_gateway",
+      "up": true,
+      "latency_ms": 6.5
+    },
+    {
+      "name": "openrouter_free",
+      "up": false,
+      "latency_ms": 999,
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "fastest": {
+    "name": "local_gateway",
+    "up": true,
+    "latency_ms": 3.8
+  }
+}

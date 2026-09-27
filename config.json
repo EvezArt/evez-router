@@ -1,0 +1,28 @@
+{
+  "providers": {
+    "openrouter_free": {
+      "url": "https://openrouter.ai/api/v1/health",
+      "health_url": "https://openrouter.ai/api/v1/health",
+      "up": true,
+      "status": "UP (API works, health endpoint 404 - flag only)",
+      "note": "health check returns 404 but routing works"
+    },
+    "local_gateway": {
+      "url": "http://localhost:18789/healthz",
+      "health_url": "http://localhost:18789/healthz"
+    },
+    "ollama_local": {
+      "url": "http://localhost:11434/api/tags",
+      "health_url": "http://localhost:11434/api/tags"
+    }
+  },
+  "ladders": {
+    "fast": "nemotron-3.5-lightning -> ling-3.0-flash -> ollama/qwen-3.2:1b",
+    "chat": "nemotron-3.5-lightning -> gemma-4-26b-a4b-it -> ling-3.0-flash -> ollama/deepseek-r1",
+    "code": "qwen-3-coder -> nemotron-3.5-lightning -> gemma-4-26b-a4b"
+  },
+  "active_routes": [
+    "local_gateway",
+    "ollama_local"
+  ]
+}

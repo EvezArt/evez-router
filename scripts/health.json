@@ -1,0 +1,15 @@
+{
+ "ts": 1789418254.7725546,
+ "nodes": {
+  "openrouter:e76180": {
+   "ok": true,
+   "latency": 0.49,
+   "error": ""
+  },
+  "ollama:local": {
+   "ok": true,
+   "latency": 12.93,
+   "error": ""
+  }
+ }
+}
